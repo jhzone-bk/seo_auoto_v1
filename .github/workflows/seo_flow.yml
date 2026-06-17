@@ -1,0 +1,42 @@
+name: AI_SEO_Pipeline
+
+on:
+  workflow_dispatch: # 允许你手动点击触发
+  schedule:
+    - cron: '0 2 * * *' # 每天凌晨2点自动运行，实现真正的“躺赚”自动化
+
+jobs:
+  seo_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v3
+
+      - name: 设置Python环境
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 安装AI与推送依赖
+        run: pip install openai requests
+
+      - name: 执行关键词自动生成
+        run: python scripts/keywords_generator.py
+
+      - name: 执行AI批量清洗与二创
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          # 如果你用的是国内的转发API，可以加个 API_BASE 环境变量
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }} 
+        run: python scripts/ai_rewrite.py
+
+      - name: 批量推送到Serv00服务器
+        run: |
+          # 扫描生成的二创 JSON，通过 IP 和 63532 端口直接灌入你的 SQLite 数据库
+          for file in output_data/*.json; do
+            if [ -f "$file" ]; then
+              curl -X POST http://128.204.223.118:63532/api/receive \
+                   -H "Content-Type: application/json" \
+                   -d @"$file"
+            fi
+          done
