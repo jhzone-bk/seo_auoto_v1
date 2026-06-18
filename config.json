@@ -1,0 +1,75 @@
+{
+  "strategies": {
+    "jd": {
+      "enabled": true,
+      "priority": 1,
+      "direct_link": "https://u.jd.com/V60yYfp",
+      "api": {
+        "base_url": "https://api.jd.com/routerjson",
+        "app_key": "",
+        "app_secret": "",
+        "site_id": ""
+      },
+      "fallback": {
+        "html": "<div class=\"ad-inject ad-jd\" data-ad-source=\"jd\" style=\"margin:20px 0;padding:16px;border:1px solid #e0e0e0;border-radius:8px;background:#fafafa;\"><strong style=\"font-size:16px;color:#c00;\">[广告] 京东汽车用品</strong><p style=\"margin:8px 0 0 0;\">正品机油、轮胎、车载电器，京东自营急速送达�?a href=\"https://u.jd.com/V60yYfp\" rel=\"nofollow sponsored\" data-ad-source=\"jd\">去京东选购 &raquo;</a></p></div>"
+      }
+    },
+    "taobao": {
+      "enabled": false,
+      "priority": 3,
+      "api": {
+        "base_url": "https://eco.taobao.com/router/rest",
+        "app_key": "",
+        "app_secret": "",
+        "adzone_id": ""
+      },
+      "fallback": {
+        "html": "<div class=\"ad-inject ad-taobao\" data-ad-source=\"taobao\" style=\"margin:20px 0;padding:16px;border:1px solid #e0e0e0;border-radius:8px;background:#fafafa;\"><strong style=\"font-size:16px;color:#f60;\">[广告] 淘宝汽车配件</strong><p style=\"margin:8px 0 0 0;\">海量汽车配件、改装件一应俱全，天天特价�?a href=\"https://www.taobao.com/\" rel=\"nofollow sponsored\" data-ad-source=\"taobao\">去淘宝逛�?&raquo;</a></p></div>"
+      }
+    },
+    "lead_generation": {
+      "enabled": false,
+      "priority": 2,
+      "api": {
+        "base_url": "http://128.204.223.118:63532/api/lead",
+        "token": ""
+      },
+      "fallback": {
+        "html": "<div class=\"ad-inject ad-lead\" data-ad-source=\"lead_generation\" style=\"margin:20px 0;padding:20px;border:2px solid #1976d2;border-radius:12px;background:linear-gradient(135deg, #f5f7fa 0%, #e8edf5 100%);\"><strong style=\"font-size:16px;color:#1976d2;\">[推荐] 免费获取报价</strong><p style=\"margin:8px 0 0 0;\">留下联系方式，多�?S店真实报价一键对比，底价买车不被坑，<a href=\"#\" rel=\"nofollow sponsored\" data-ad-source=\"lead_generation\">立即获取底价 &raquo;</a></p></div>"
+      }
+    }
+  },
+  "keyword_ad_mapping": {
+    "机油": {
+      "html": "<div class=\"ad-inject ad-precision\" data-ad-source=\"precision\" data-ad-keyword=\"机油\" style=\"margin:20px 0;padding:18px;border:2px solid #ff6b00;border-radius:10px;background:linear-gradient(135deg, #fff8f0 0%, #ffecd2 100%);\"><strong style=\"font-size:16px;color:#e65100;\">🔥 [精准推荐] 全合成机油专�?/strong><p style=\"margin:8px 0 0 0;\">美孚/壳牌/嘉实多全合成机油，正品授权假一赔十�?a href=\"https://u.jd.com/V60yYfp\" rel=\"nofollow sponsored\" data-ad-source=\"precision\">立即抢购 &raquo;</a></p></div>"
+    },
+    "行车记录�?: {
+      "html": "<div class=\"ad-inject ad-precision\" data-ad-source=\"precision\" data-ad-keyword=\"行车记录仪\" style=\"margin:20px 0;padding:18px;border:2px solid #1565c0;border-radius:10px;background:linear-gradient(135deg, #f0f7ff 0%, #d6eaff 100%);\"><strong style=\"font-size:16px;color:#0d47a1;\">📹 [精准推荐] 4K行车记录�?/strong><p style=\"margin:8px 0 0 0;\">海康威视/盯盯�?360，夜视高清循环录制，<a href=\"https://u.jd.com/V60yYfp\" rel=\"nofollow sponsored\" data-ad-source=\"precision\">立即选购 &raquo;</a></p></div>"
+    },
+    "轮胎": {
+      "html": "<div class=\"ad-inject ad-precision\" data-ad-source=\"precision\" data-ad-keyword=\"轮胎\" style=\"margin:20px 0;padding:18px;border:2px solid #2e7d32;border-radius:10px;background:linear-gradient(135deg, #f0fff0 0%, #d4f5d4 100%);\"><strong style=\"font-size:16px;color:#1b5e20;\">🛞 [精准推荐] 品牌轮胎特惠</strong><p style=\"margin:8px 0 0 0;\">米其�?普利司�?固特异，包安装送动平衡�?a href=\"https://u.jd.com/V60yYfp\" rel=\"nofollow sponsored\" data-ad-source=\"precision\">立即选购 &raquo;</a></p></div>"
+    },
+    "刹车�?: {
+      "html": "<div class=\"ad-inject ad-precision\" data-ad-source=\"precision\" data-ad-keyword=\"刹车片\" style=\"margin:20px 0;padding:18px;border:2px solid #b71c1c;border-radius:10px;background:linear-gradient(135deg, #fff5f5 0%, #ffd4d4 100%);\"><strong style=\"font-size:16px;color:#c62828;\">🛑 [精准推荐] 陶瓷刹车�?/strong><p style=\"margin:8px 0 0 0;\">博世/菲罗�?金麒麟陶瓷刹车片，静音耐磨�?a href=\"https://u.jd.com/V60yYfp\" rel=\"nofollow sponsored\" data-ad-source=\"precision\">立即选购 &raquo;</a></p></div>"
+    },
+    "座垫": {
+      "html": "<div class=\"ad-inject ad-precision\" data-ad-source=\"precision\" data-ad-keyword=\"座垫\" style=\"margin:20px 0;padding:18px;border:2px solid #6a1b9a;border-radius:10px;background:linear-gradient(135deg, #faf5ff 0%, #e8d5f5 100%);\"><strong style=\"font-size:16px;color:#4a148c;\">🪑 [精准推荐] 汽车座垫座套</strong><p style=\"margin:8px 0 0 0;\">四季通用亚麻/冰丝/全包围座垫，专车专用�?a href=\"https://u.jd.com/V60yYfp\" rel=\"nofollow sponsored\" data-ad-source=\"precision\">立即选购 &raquo;</a></p></div>"
+    }
+  },
+  "default_ad": {
+    "pool": [
+      "<div class=\"ad-inject ad-default\" data-ad-source=\"default_pool\" data-ad-product=\"车载充电器\" style=\"margin:20px 0;padding:16px;border:1px solid #e0e0e0;border-radius:8px;background:#fafafa;\"><strong style=\"font-size:16px;color:#333;\">🔌 [热销] 车载充电�?/strong><p style=\"margin:8px 0 0 0;\">快充双USB，电压检测，智能分流不伤电瓶�?a href=\"https://u.jd.com/V60yYfp\" rel=\"nofollow sponsored\" data-ad-source=\"default_pool\">立即选购 &raquo;</a></p></div>",
+      "<div class=\"ad-inject ad-default\" data-ad-source=\"default_pool\" data-ad-product=\"全能清洁剂\" style=\"margin:20px 0;padding:16px;border:1px solid #e0e0e0;border-radius:8px;background:#fafafa;\"><strong style=\"font-size:16px;color:#333;\">🧴 [热销] 全能清洁�?/strong><p style=\"margin:8px 0 0 0;\">内饰/皮革/仪表台一喷即净，不伤材质，<a href=\"https://u.jd.com/V60yYfp\" rel=\"nofollow sponsored\" data-ad-source=\"default_pool\">立即选购 &raquo;</a></p></div>",
+      "<div class=\"ad-inject ad-default\" data-ad-source=\"default_pool\" data-ad-product=\"手机支架\" style=\"margin:20px 0;padding:16px;border:1px solid #e0e0e0;border-radius:8px;background:#fafafa;\"><strong style=\"font-size:16px;color:#333;\">📱 [热销] 车载手机支架</strong><p style=\"margin:8px 0 0 0;\">重力感应/磁吸/出风口通用，稳固不晃，<a href=\"https://u.jd.com/V60yYfp\" rel=\"nofollow sponsored\" data-ad-source=\"default_pool\">立即选购 &raquo;</a></p></div>",
+      "<div class=\"ad-inject ad-default\" data-ad-source=\"default_pool\" data-ad-product=\"遮阳挡\" style=\"margin:20px 0;padding:16px;border:1px solid #e0e0e0;border-radius:8px;background:#fafafa;\"><strong style=\"font-size:16px;color:#333;\">☀�?[热销] 汽车遮阳�?/strong><p style=\"margin:8px 0 0 0;\">防晒隔热，折叠收纳，保护内饰不老化�?a href=\"https://u.jd.com/V60yYfp\" rel=\"nofollow sponsored\" data-ad-source=\"default_pool\">立即选购 &raquo;</a></p></div>",
+      "<div class=\"ad-inject ad-default\" data-ad-source=\"default_pool\" data-ad-product=\"玻璃水\" style=\"margin:20px 0;padding:16px;border:1px solid #e0e0e0;border-radius:8px;background:#fafafa;\"><strong style=\"font-size:16px;color:#333;\">💧 [热销] 玻璃�?/strong><p style=\"margin:8px 0 0 0;\">去油�?防冻/夏季通用，清晰视野，<a href=\"https://u.jd.com/V60yYfp\" rel=\"nofollow sponsored\" data-ad-source=\"default_pool\">立即选购 &raquo;</a></p></div>"
+    ]
+  },
+  "global_settings": {
+    "auto_switch_on_failure": true,
+    "max_ads_per_article": 3,
+    "ad_insert_positions": ["after_p2", "after_p4", "after_p6"],
+    "request_timeout_seconds": 5,
+    "enable_data_tracking": true
+  }
+}
